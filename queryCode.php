@@ -25,7 +25,7 @@
     $getData = $getHandler->getDataFromQuery();
     
     /* ПОДКЛЮЧЕНИЕ К БАЗЕ ДАННЫХ */
-    $connect = new ConnectToDataBase("localhost","a0755408_slonick","ler20PJL","a0755408_slonick");
+    $connect = new ConnectToDataBase("localhost","a0234408_slonick","ler2234PJL","a0423408_slonick");
     $connect->openConnection();
     $mysql = $connect->getConnection();
     $queryToDataBase = new QueryToDataBase($mysql);
@@ -73,8 +73,8 @@
      * Функция возвращает: $token - уникальный ключ для запроса к API.
      */
     function getToken() {
-        $seller_id = 1122342346;
-        $apiKey = '73121A4EFA234244218DC405B89495ED2A';
+        $seller_id = 1122242346;
+        $apiKey = '243221A4EFA234244218DC405B89495ED2A';
         $timestamp = time();
         $sign = hash('sha256', $apiKey.$timestamp);
         
