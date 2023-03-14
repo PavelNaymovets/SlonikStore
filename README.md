@@ -14,18 +14,18 @@
 
 1. hmnsLib - небольшая самописная библиотека. Содержит классы:
 * _[GetPostHandler](https://github.com/PavelNaymovets/SlonikStore/blob/master/hmnsLib/getPostHandler/GetPostHandler.php)_;
-* JsonHandler;
-* ConnectToDataBase;
-* QueryToDataBase;
+* _[JsonHandler](https://github.com/PavelNaymovets/SlonikStore/blob/master/hmnsLib/jsonHandler/jsonHandler.php)_;
+* _[ConnectToDataBase](https://github.com/PavelNaymovets/SlonikStore/blob/master/hmnsLib/workWithDataBase/ConnectToDataBase.php)_;
+* _[QueryToDataBase](https://github.com/PavelNaymovets/SlonikStore/blob/master/hmnsLib/workWithDataBase/QueryToDataBase.php)_;
 
 P.S. Описание назначения класса содержится в файле класса.
 
-2. queryCode.php - скрипт эндпоинта.
+2. _[/queryCode.php](https://github.com/PavelNaymovets/SlonikStore/blob/master/queryCode.php)_ - скрипт эндпоинта.
 
 ### Логика работы микросервиса:
 
 1. Обработка GET запроса. Получения уникального номера оплаченного счёта.
-2. Запрос токена(api.digiseller.ru).
+2. Запрос токена(_[api.digiseller.ru](https://api.digiseller.ru/)_).
 3. Запрос данных о покупке(api.digiseller.ru). Токен + уникальный номер оплаченного счета.
 4. Извлечение данных из шага 3 о сумме покупки.
 5. Проверка данных о покупке. Получал ли пользователь ранее коды из базы данных по текущему номеру оплаченного счета(исключение возможности повторного получения кодов по одному и тому же оплаченному счету)
