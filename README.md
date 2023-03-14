@@ -13,8 +13,8 @@
 ### Структура:
 
 1. hmnsLib - небольшая самописная библиотека. Содержит классы:
-* GetPostHandler - обработка GET, POST запросов;
-* JsonHandler - ;
+* GetPostHandler;
+* JsonHandler;
 * ConnectToDataBase;
 * QueryToDataBase;
 
