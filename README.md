@@ -13,7 +13,7 @@
 ### Структура:
 
 1. hmnsLib - небольшая самописная библиотека. Содержит классы:
-* GetPostHandler;
+* _[GetPostHandler](https://github.com/PavelNaymovets/SlonikStore/blob/master/hmnsLib/getPostHandler/GetPostHandler.php)_;
 * JsonHandler;
 * ConnectToDataBase;
 * QueryToDataBase;
